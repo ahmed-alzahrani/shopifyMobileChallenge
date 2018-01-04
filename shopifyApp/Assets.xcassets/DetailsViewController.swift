@@ -10,8 +10,10 @@ import UIKit
 import Alamofire
 import AlamofireImage
 
+// VC for the details page presented when a user taps on a specific product
 class DetailsViewController: UIViewController {
     
+    // labels that are populated based on the specific product
     @IBOutlet weak var titleLabel: UILabel!
     @IBOutlet weak var idLabel: UILabel!
     @IBOutlet weak var vendorLabel: UILabel!
@@ -22,8 +24,11 @@ class DetailsViewController: UIViewController {
     @IBAction func buyButton(_ sender: Any) {
     }
     
+    // product that was tapped in the UITableView
     var product: Product!
     
+    // ovveride the viewDidLoad() so that the page is programatically put together as the page loads
+    // simply assign the picture and labels based on the product info
     override func viewDidLoad() {
         super.viewDidLoad()
         titleLabel.text = product.title

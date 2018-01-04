@@ -13,6 +13,7 @@ struct getProductResponse {
     
     let products: [Product]
     
+    // populates the products array with Product objects based on the response from the Alamofire request
     init(json: JSON) throws {
         let products = json["products"].arrayValue.map{ Product(json: $0) }.flatMap{$0}
         self.products = products

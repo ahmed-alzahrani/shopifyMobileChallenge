@@ -8,15 +8,7 @@
 
 import UIKit
 
+// VC for the purchased screen that is presented when the user clicks the buy button
+// currently nothing happens as the page just displays a text box
 class PurchasedViewController: UIViewController {
-
-    
-    
-    override func viewDidLoad() {
-        super.viewDidLoad()
-    }
-    override func didReceiveMemoryWarning() {
-        super.didReceiveMemoryWarning()
-        // Dispose of any resources that can be recreated.
-    }
 }
